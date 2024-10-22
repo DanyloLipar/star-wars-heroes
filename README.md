@@ -1,5 +1,6 @@
 ## Star Wars Heroes
 [DEMO](https://magenta-arithmetic-16870c.netlify.app/)
+
 Application allows users to explore a list of heroes from the Star Wars universe using an API. The app supports pagination for convenient browsing heroes by page. For each hero, detailed information is displayed, including associated movies and starships, visualized as a graph using React Flow.
 
 # Technologies used:
