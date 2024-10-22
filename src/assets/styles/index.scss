@@ -1,0 +1,14 @@
+@import "./additional/vars.scss";
+@import "./mixins/adaptive.scss";
+@import "./additional/normalize.scss";
+@import "./components/modal.scss";
+@import "./components/loader.scss";
+@import "./components//heroes-list.scss";
+@import "./components/hero-details.scss";
+@import "./components/graph-vizualization.scss";
+
+.head {
+  padding: 20px;
+  background-color: $primary-color;
+  color: $general-txt-color;
+}

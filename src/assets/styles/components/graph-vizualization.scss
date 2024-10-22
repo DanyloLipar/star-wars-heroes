@@ -1,0 +1,17 @@
+.react-flow {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .react-flow__node {
+    background: #fff;
+    border: 1px solid #222;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .react-flow__edge {
+    stroke: #222;
+  }
+}

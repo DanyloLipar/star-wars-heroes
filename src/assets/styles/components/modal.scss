@@ -1,0 +1,49 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../../photos/stars.jpg");
+  color: $general-txt-color;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 60%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
+  &__close {
+    background-color: $general-txt-color;
+    color: $secondary-color;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-weight: bolder;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($general-txt-color, 10%);
+    }
+  }
+}

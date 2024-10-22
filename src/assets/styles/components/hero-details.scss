@@ -1,0 +1,85 @@
+.hero-details {
+  margin-top: 8px;
+
+  &__name {
+    text-align: center;
+    color: $secondary-color;
+    -webkit-text-stroke: 0.9px $general-txt-color;
+    padding: 5px 0;
+  }
+
+  &__box {
+    background-color: $hero-info-bg;
+
+    &-back {
+      background-color: $primary-color;
+      color: $general-txt-color;
+      padding: 4px 7px;
+      border-radius: 8px;
+      margin-left: 30px;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+.info {
+  display: flex;
+  gap: 5vw;
+  margin-top: 20px;
+  padding: 5vw;
+
+  @include onMobileAndTablet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__details {
+    @include onMobileAndTablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-data {
+      margin-top: 7px;
+    }
+
+    &-photo {
+      max-width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 2px solid $general-txt-color;
+
+      @include onMobileAndTablet {
+        max-width: none;
+        width: 60%;
+        height: 150px;
+      }
+
+      & > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.graph-container {
+  flex: 1;
+  height: 400px;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: $hero-bg-color;
+
+  @include onMobileAndTablet {
+    height: 300px;
+  }
+
+  @include onMobileAndTablet {
+    flex: none;
+  }
+}
